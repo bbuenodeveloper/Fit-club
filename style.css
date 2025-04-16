@@ -1,0 +1,232 @@
+:root {
+    --main-color: #fd288d;
+    --black: #000;
+    --white: #fff;
+    --second-color: #2b1821;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 10px;
+    text-decoration: none;
+    outline: none;
+    text-transform: capitalize;
+
+}
+
+body {
+    background-color: var(--black);
+}
+
+section {
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.header {
+    border-bottom: 0.1rem solid var(--main-color);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: var(--black);
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header section img {
+    width: 100px;
+    height: 100px;
+}
+
+.navbar a {
+    color: var(--main-color);
+    font-size: 1.8rem;
+    margin: 0 1.5rem;
+}
+
+.navbar a:hover {
+    font-size: 2rem;
+    border-bottom: 0.1rem solid var(--main-color);
+}
+
+.home-container {
+    background-image: url(./img/123.webp);
+    height: 600px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    max-width: 350px;
+    margin-left: 5rem;
+}
+
+.content h3 {
+    color: var(--white);
+    font-size: 5rem;
+    margin: 10px auto;
+}
+
+.content p {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.content a {
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    border-radius: 20px;
+}
+
+.content a:hover {
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.sobre {
+    background-color: var(--second-color);
+}
+
+.sobre h3 {
+    font-size: 3rem;
+    color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    padding: 3rem;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.row .oval {
+    background-color: var(--main-color);
+    width: 15rem;
+    height: 15vh;
+    border-radius: 50%;
+    margin: 2rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rowtext {
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.rowtext p {
+    width: 18rem;
+    border: 1px solid #ccc;
+    margin: 2rem;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 1.1rem;
+    letter-spacing: 1.1px;
+    line-height: 1.5rem;
+    font-weight: 300;
+    background-color: rgba(41, 6, 53, 0.8);
+    transition: 0.5s ease-in-out;
+}
+
+.rowtext p:hover {
+    transform: translateY(-10px);
+}
+
+.total {
+    background-color: var(--second-color);
+    padding-top: 10rem;
+}
+
+.total h3 {
+    color: var(--main-color);
+    font-size: 3rem;
+    text-align: center;
+
+}
+
+.card-format {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 10px;
+    margin-top: 10rem;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 3rem 4rem;
+    margin: 30px;
+    background-color: rgba(41, 6, 53, 0.8);
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card p {
+    color: var(--white);
+    font-size: 1.3rem;
+    letter-spacing: 1.1px;
+    line-height: 1.5rem;
+    padding-bottom: 20px;
+    font-weight: 300;
+}
+
+.card span {
+    color: var(--main-color);
+    font-size: 1.5rem;
+
+}
+
+.footer {
+    background-color: var(--second-color);
+    padding-top: 10rem;
+}
+.footer-conteiner h3 {
+    color: var(--main-color);
+    font-size: 3rem;
+    margin-left: 50px;
+}
+
+.footer p {
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+}
+
+.footer span {
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+.rede-social {
+    margin-left: 50px;
+    padding-bottom: 50px;
+}
