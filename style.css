@@ -108,13 +108,14 @@ section {
     justify-content: center;
     text-transform: uppercase;
     padding: 3rem;
+    margin-bottom: 10rem;
 }
 
 .row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    width: 900px;
+    margin: 0 auto;
 }
 
 .row .oval {
@@ -130,9 +131,11 @@ section {
 
 .rowtext {
     color: var(--white);
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     padding: 20px;
+    width: 900px;
+    margin: 0 auto;
 }
 
 .rowtext p {
