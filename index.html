@@ -6,24 +6,30 @@
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <title>Fit Club</title>
     </head>
     <body>
         <header class="header">
             <section>
                 <a href="#" class="logo">
-                    <img src="./img/145.png" alt="logo">
+                    <img class="img-logo" src="./img/145.png" alt="logo">
                 </a>
-
                 <nav class="navbar">
-                    <a href="#home" class>Home</a>
-                    <a href="#sobre" class>Sobre</a>
-                    <a href="#depoimentos" class>depoimentos</a>
-                    <a href="#contato" class>contato</a>
+                    <a href="#home" class="nav-list">Home</a>
+                    <a href="#sobre" class="nav-list">Sobre</a>
+                    <a href="#depoimentos" class="nav-list">depoimentos</a>
+                    <a href="#contato" class="nav-list">contato</a>
                 </nav>
+                <div class="menu-resposivo">
+                    <button onclick="menuShow()" class="btn-menu"><img class="btn" src="./img/hamburguer.png" alt="meu-burguer" /></button>
+                </div>
+                <div class="menu-mobile">
+                    <a href="#home" class="nav-list">Home</a>
+                    <a href="#sobre" class="nav-list">Sobre</a>
+                    <a href="#depoimentos" class="nav-list">depoimentos</a>
+                    <a href="#contato" class="nav-list">contato</a>
+                </div>
             </section>
         </header>
         <section id="home">
@@ -113,6 +119,6 @@
                 </div>
             </section>
         </footer>
-
+        <script src="script.js"></script>
     </body>
 </html>
